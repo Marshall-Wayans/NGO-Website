@@ -1,0 +1,216 @@
+.sponsor-wrapper {
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+
+.sponsor-hero {
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sponsor-hero-bg {
+  background-image: url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1770&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.sponsor-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #01388a 30%, #01388a90);
+  z-index: 1;
+}
+
+.sponsor-hero-content {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  max-width: 700px;
+}
+
+.sponsor-hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sponsor-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #e0ecff;
+}
+
+
+.sponsor-btn-primary {
+  background-color: #facc15;
+  color: #01388a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sponsor-btn-primary:hover {
+  background-color: #ffe44d;
+}
+
+.sponsor-btn-secondary {
+  background-color: white;
+  color: #01388a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sponsor-btn-outline {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+.sponsor-btn-outline:hover {
+  background-color: white;
+  color: #01388a;
+}
+
+
+.sponsor-info {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.sponsor-info-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+.sponsor-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.sponsor-card:hover {
+  transform: translateY(-5px);
+}
+.sponsor-icon {
+  background: #e0ecff;
+  color: #01388a;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.sponsor-priority {
+  background: linear-gradient(to right, #01388a, #076affd9);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.sponsor-priority p{
+  color: #e0ecff;
+}
+
+.sponsor-lookup {
+  padding: 4rem 1rem;
+}
+.sponsor-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.sponsor-filters select {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.sponsor-child-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.sponsor-child-card:hover {
+  transform: translateY(-5px);
+}
+.sponsor-child-img {
+  position: relative;
+  height: 220px;
+}
+.sponsor-child-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sponsor-child-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  text-align: left;
+}
+.sponsor-quote {
+  padding: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+
+.sponsor-cta {
+  background: linear-gradient(to right, #01388a, #012e70);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.sponsor-cta-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.sponsor-cta p {
+  color: #e0ecff;
+}
+
+.sponsor-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.sponsor-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

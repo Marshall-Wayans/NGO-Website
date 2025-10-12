@@ -1,0 +1,123 @@
+.get-involved {
+  background: var(--light-gray);
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.involvement-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .involvement-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .involvement-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.involvement-card {
+  background: #fff;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all var(--transition-slow);
+}
+
+.involvement-card.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.involvement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.involvement-card.highlight {
+  border: 3px solid var(--primary-yellow);
+  box-shadow: 0 0 20px rgba(255, 209, 102, 0.3);
+}
+
+.card-bar {
+  height: 6px;
+}
+
+.card-bar.yellow {
+  background: linear-gradient(to right, #facc15, #fbbf24);
+}
+.card-bar.blue {
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+}
+.card-bar.green {
+  background: linear-gradient(to right, #22c55e, #16a34a);
+}
+.card-bar.purple {
+  background: linear-gradient(to right, #a855f7, #9333ea);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--dark-text);
+}
+
+p {
+  font-size: 0.95rem;
+  color: var(--dark-gray);
+  margin-bottom: var(--spacing-md);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+}
+
+.primary-btn {
+  background: var(--primary-yellow);
+  color: var(--dark-text);
+}
+.primary-btn:hover {
+  background: #fbbf24;
+}
+
+.secondary-btn {
+  background: var(--medium-gray);
+  color: var(--dark-text);
+}
+.secondary-btn:hover {
+  background: #d1d5db;
+}
+
+.intro-text h2 {
+  color: #000; /* Black */
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.intro-text p {
+  color: #000; /* Black */
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}

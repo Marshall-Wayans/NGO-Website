@@ -1,0 +1,307 @@
+.donate-wrapper {
+  font-family: "Poppins", sans-serif;
+  background: #f9fafb;
+  color: #1e293b;
+}
+
+
+.donate-fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.donate-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+
+.donate-hero {
+  position: relative;
+  height: 700px;
+  background: url("https://images.unsplash.com/photo-1509099836639-18ba1795216d")
+    center/cover no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.donate-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(1, 56, 138, 0.85), rgba(1, 56, 138, 0.65));
+}
+.donate-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 600px;
+  padding: 1rem;
+}
+.donate-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.donate-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e5e7eb;
+
+}
+
+.donate-btn-primary {
+  background: #facc15;
+  color: #01388a;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.donate-btn-primary:hover {
+  background: #fcd34d;
+}
+
+
+.donate-why {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.donate-why h2 {
+  color: #01388a;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.donate-why-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.donate-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.donate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.donate-icon {
+  color: #01388a;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+
+.donate-form-section {
+  padding: 4rem 1rem;
+  background: white;
+  
+}
+
+.donate-form-section h2 {
+  align-items: center;
+}
+.donate-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.donate-form-container h2 {
+  text-align: center;
+  color: #01388a;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.donate-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.donate-amount-btn {
+  flex: 1;
+  min-width: 100px;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.donate-amount-btn.active {
+  background: #facc15;
+  border-color: #01388a;
+  color: #01388a;
+}
+.donate-type-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.donate-type-buttons button {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #e5e7eb;
+  transition: background 0.3s;
+}
+.donate-type-buttons button.active {
+  background: #01388a;
+  color: white;
+}
+.donate-input-wrap {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+.donate-input-wrap span {
+  margin-right: 0.3rem;
+  color: #6b7280;
+}
+.donate-input-wrap input {
+  border: none;
+  flex: 1;
+  outline: none;
+}
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.donate-form input,
+.donate-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-family: inherit;
+}
+.donate-note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+
+.donate-transparency {
+  background: #f9fafb;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.donate-transparency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.donate-transparency-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.donate-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #01388a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.donate-transparency-footer a {
+  color: #01388a;
+  text-decoration: underline;
+}
+
+
+.donate-impact {
+  padding: 4rem 1rem;
+}
+.donate-impact-quote {
+  position: relative;
+  height: 300px;
+  background: url("https://images.unsplash.com/photo-1517673132405-a56a62b18caf")
+    center/cover no-repeat fixed;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+.donate-impact-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 56, 138, 0.75);
+}
+.donate-impact-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 0 1rem;
+}
+.donate-impact-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.donate-impact-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.donate-impact-card ul {
+  list-style: none;
+  padding: 0;
+}
+.donate-impact-card li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+
+.donate-cta {
+  background: #01388a;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.donate-cta h2 {
+  margin-bottom: 2rem;
+}
+.donate-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.donate-btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.donate-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+}

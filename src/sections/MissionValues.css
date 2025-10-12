@@ -1,0 +1,47 @@
+.mission {
+  margin-top: 30px;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.principle-card {
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius-md);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.principle-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.principle-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+
+@media (max-width: 768px) {
+  .principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+}
