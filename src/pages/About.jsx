@@ -152,7 +152,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* CTA */}
+
       <section className="about-section about-cta">
         <h2>Join Us in Making a Difference</h2>
         <p>
@@ -172,4 +172,4 @@ export default function About() {
       <Footer />
     </div>
   );
-}
+} 

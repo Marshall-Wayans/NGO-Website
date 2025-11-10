@@ -301,7 +301,7 @@
   transform: translateY(40px);
   animation: fadeInUp 1s ease forwards;
 }
-
+ 
 .about-partner-card.visible {
   opacity: 1;
   transform: translateY(0);
@@ -360,6 +360,9 @@
   flex-wrap: wrap;
 }
 
+.about-cta p {
+  color: #eaf2ff;
+}
 
 @keyframes fadeIn {
   from {

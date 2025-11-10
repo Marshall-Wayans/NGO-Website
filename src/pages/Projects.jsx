@@ -107,6 +107,7 @@ export default function Projects() {
 
   return (
     <div className="projects-wrapper">
+     
       <div className="projects-header projects-fade-in" ref={(el) => fadeRefs.current.push(el)}>
         <h1>Our Projects</h1>
         <p>
@@ -115,6 +116,7 @@ export default function Projects() {
         </p>
       </div>
 
+     
       <section className="projects-grid-section">
         <div className="projects-grid">
           {projects.map((proj) => (
@@ -129,13 +131,21 @@ export default function Projects() {
               <div className="projects-card-content">
                 <div className="projects-category">{proj.category}</div>
                 <h3>{proj.title}</h3>
-                <p>{proj.description}</p>
+                <p>
+                  {proj.description.split("\n").map((line, i) => (
+                    <React.Fragment key={i}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </p>
               </div>
             </div>
           ))}
         </div>
       </section>
- 
+
+      
       <section className="projects-milestones">
         <h2 className="projects-fade-in" ref={(el) => fadeRefs.current.push(el)}>
           Our Journey
@@ -154,6 +164,7 @@ export default function Projects() {
         </div>
       </section>
 
+      
       <section className="projects-cta projects-fade-in" ref={(el) => fadeRefs.current.push(el)}>
         <h2>Get Involved</h2>
         <p>
@@ -161,8 +172,12 @@ export default function Projects() {
           education, health, and development programs.
         </p>
         <div className="projects-cta-buttons">
-          <a href="/sponsor" className="projects-btn sponsor">Sponsor a Child</a>
-          <a href="/contact" className="projects-btn contact">Contact Us</a>
+          <a href="/sponsor" className="projects-btn sponsor">
+            Sponsor a Child
+          </a>
+          <a href="/contact" className="projects-btn contact">
+            Contact Us
+          </a>
         </div>
       </section>
     </div>
