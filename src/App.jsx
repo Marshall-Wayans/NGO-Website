@@ -9,17 +9,19 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Sponsor from "./pages/Sponsor";
+import ScrollToTop from "./components/ScrollToTop"; 
 
 export default function App() {
   const location = useLocation(); 
-
-  
   const noGlobalFooter = ["/about"];
 
   return (
     <div className="app-root">
       <Navbar />
       <main>
+        
+        <ScrollToTop />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -31,7 +33,6 @@ export default function App() {
         </Routes>
       </main>
 
-      
       {!noGlobalFooter.includes(location.pathname) && <Footer />}
     </div>
   );

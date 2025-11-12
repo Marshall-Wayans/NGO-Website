@@ -1,13 +1,14 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
-import App from './App'
-import './styles/style.css'
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import "./styles/style.css";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    
+    <BrowserRouter basename="/NGO-Website">
       <App />
     </BrowserRouter>
   </React.StrictMode>
-)
+);

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://marshall-wayans.github.io/NGO-Website/",
+  "homepage": "https://marshall-wayans.github.io/NGO-Website/home/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
